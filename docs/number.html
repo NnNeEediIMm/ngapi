@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGApi</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary color-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand slika" href="../index.html"><img src="../imgs/logo.png" class="slika" alt=""></a>
+        <button class="navbar-toggler button-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link"  href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="docs.html">Docs</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="razmak">
+
+    <main style="justify-content: start; flex-wrap: wrap; flex-direction: column; height: fit-content;"> 
+        <div class="lista">
+            <ul class="nav nav-underline justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link" href="docs.html">Download</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="number.html">Number</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+
+        <div style="margin-left: 10px; margin-top: 16px;">
+          <h2>Numbers (Class)</h2>
+          <p>Simplified usage of certain functions of int and double.</p>
+          
+          <hr style="color: rgb(162, 162, 162);">
+          
+          <div style="margin-left: 2px; margin-top: 2px;">
+            <h4>Length (class)</h4>
+            <p>To get length of int or double call length class and then call getNumberLength() or getDoubleLength().</p>
+            <br>
+            <p>Usage for getNumberLength():</p>
+            <section class="codeBlock1">
+              <style>
+                .small {
+                  height: 10px;
+                  font-size: medium;
+                }
+              </style>
+              <p class="small" style="margin-top: 5px; color: rgb(94, 94, 255);">#include <span style="color: green;">"ngapi.cpp"</span></p>
+              <p class="small" style="margin-top: 5px; color: rgb(77, 77, 255);">using <span style="color: purple;">namespace</span> <span style="color: rgb(151, 151, 0);">ngapi</span>;</p>
+              <br>
+              <p class="small" style="margin-top: 5px; color: purple;"> int <span style="color: rgb(151, 151, 0);">main<span style="color: yellow;">()</span> &#123;</span> </p>
+              <p class="small" style="margin-top: 5px; margin-left: 20px; color: rgb(77, 77, 255);"><span style="color: purple;">int</span> num = <span style="color: rgb(255, 0, 247);">123456</span>;<span style="margin-left: 15px; color: rgb(83, 92, 255);">// Length is 6</span></p>
+              <p class="small" style="margin-top: 5px; margin-left: 20px; color: rgb(77, 77, 255);"><span style="color: purple;">int</span> length = number.length.<span style="color: rgb(151, 151, 0);">getNumberLength<span style="color: rgb(255, 0, 247);">(<span style="color: rgb(77, 77, 255);">num</span>)</span></span>;</p>
+              <p class="small" style="margin-top: 5px; margin-left: 20px; color: rgb(77, 77, 255);">console.<span style="color: rgb(151, 151, 0);">log<span style="color: rgb(255, 0, 247);">(<span style="color: rgb(77, 77, 255);">text.<span style="color: rgb(151, 151, 0);">toString</span>(length)</span>)</span></span>;</p>
+
+              <p class="small" style="margin-top: 5px; margin-left: 20px;  color: rgb(151, 151, 0);">success<span style="color: rgb(255, 0, 247);">()<span style="color: rgb(77, 77, 255);">;</span></p>
+              <p class="small" style="margin-top: 5px; color: rgb(151, 151, 0);">&#125;</p>
+            </section>
+          </div>
+        </div>
+      </main>
+
+
+    <footer>
+      <p style="align-self: flex-end;">©2024 NnNeEediIMm</p>
+    </footer>
+    <!-- Bootstrap i Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+</body>
+</html>
